@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<vuv>
+	<clanoviprojekta>
+			<clan id_clana="0" ime="Ivan" prezime="Horvat"  oib="32865438621" id_projekta="0" voditelj="false"></clan>
+			<clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" id_projekta="1" voditelj="true"></clan>
+			<clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" id_projekta="2"  voditelj="false"></clan>
+			<clan id_clana="3" ime="Filip" prezime="Peric" oib="47865338621" id_projekta="2" voditelj="true"></clan>
+			<clan id_clana="4" ime="David" prezime="Ivic"  oib="32865438650" id_projekta="3" voditelj="false"></clan>
+             
+	</clanoviprojekta>
+
+	<projekti>
+		<projekt ID="0"  id_lokacije="0" id_clana="1" id_aktivnosti="0" Naziv="Izgradnja vrta" Nositelj="FASDASD" Vrijednost="100000" Status="Aktivan" Voditelj="ASDASD DSADASD"></projekt>
+		<projekt ID="1"  id_lokacije="1" id_clana="2" id_aktivnosti="1" Naziv="Gradnja Studentskog doma" Nositelj="FASDASD" Vrijednost="10000000" Status="Aktivan" Voditelj="ASDASD DSADASD"></projekt>
+		<projekt ID="2"  id_lokacije="2" id_clana="3" id_aktivnosti="2" Naziv="Gradnja krovišta na bolnici" Nositelj="FASDASD" Vrijednost="200" Status="Aktivan" Voditelj="ASDASD DSADASD"></projekt>
+	</projekti>
+
+	<aktivnosti>
+		<aktivnost id_aktivnosti="0" id_clana="0" id_lokacije="0" Naziv="Kopanje" Opis="Kopanje u Virovitici" Vrijeme="3 mjeseca"></aktivnost>
+		<aktivnost id_aktivnosti="1" id_clana="1" id_lokacije="1" Naziv="Gradnja" Opis="Gradnja u Virovitici" Vrijeme="2 mjeseca"></aktivnost>
+		<aktivnost id_aktivnosti="2" id_clana="2" id_lokacije="2" Naziv="Rusenje" Opis="Rusenje u Varazdinu" Vrijeme="4 mjeseca"></aktivnost>
+		<aktivnost id_aktivnosti="3" id_clana="3" id_lokacije="3" Naziv="Dodavanje fasade" Opis="Dodavanje fasade u Tovarniku" Vrijeme="6 mjeseca"></aktivnost>
+		<aktivnost id_aktivnosti="4" id_clana="4" id_lokacije="4" Naziv="Dodavanje krova" Opis="Dodavanje krova u Vinkovcima" Vrijeme="12 mjeseci"></aktivnost>
+	</aktivnosti>
+	<lokacije>
+		<lokacija id_lokacije="0" adresa="Ulica Matije Gupca 23" postanskibroj="33000" grad="Virovitica" latituda="45.83194" longituda="17.38389"></lokacija>
+		<lokacija id_lokacije="1" adresa="Osjecka ul. 6" postanskibroj="33000" grad="Virovitica" latituda="45.83947095563706" longituda="17.49425"></lokacija>
+		<lokacija id_lokacije="2" adresa="Setaliste Josipa Jurja Strossmayera 1" postanskibroj="42000" grad="Varazdin" latituda="46.3109" longituda="16.3369"></lokacija>
+		<lokacija id_lokacije="3" adresa="Josipa Rimca 7" postanskibroj="35000" grad="Slavonski Brod" latituda="45.16032412441" longituda="18.0003"></lokacija>
+		<lokacija id_lokacije="4" adresa="Ul. Antuna Gustava Matosa 7" postanskibroj="32249" grad="Tovarnik" latituda="45.1659" longituda="19.1522"></lokacija>
+		<lokacija id_lokacije="5" adresa="Trg bana Josipa Sokcevica 16" postanskibroj="32100" grad="Vinkovci" latituda="45.2884172368565" longituda="18.805220333864174"></lokacija>
+	</lokacije>
+</vuv>
