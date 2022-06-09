@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vuv>
+  <!--Tu bi se svi clanovi svih projekata spremali-->
+  <clanoviprojekta>
+    <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="False" />
+    <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="False" />
+    <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="False" />
+    <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="False" />
+    <clan id_clana="5" ime="Dario" prezime="Rupcic" oib="87098765241" voditelj="True" />
+    <clan id_clana="11" ime="Petar" prezime="Ivic" oib="92012412421" voditelj="False" />
+    <clan id_clana="152" ime="Petar" prezime="Pan" oib="19204124561" voditelj="False" />
+  </clanoviprojekta>
+  <ListaVoditelja>
+    <voditelj id_voditelja="3" ime="Filip" prezime="Peric" oib="47865338621" voditelj="True" />
+    <voditelj id_voditelja="10" ime="Petar" prezime="Peric" oib="82112521512" voditelj="True" />
+    <voditelj id_voditelja="142" ime="Mario" prezime="Kuren" oib="92672613631" voditelj="True" />
+  </ListaVoditelja>
+  <projekti>
+    <projekt ID="0" id_lokacije="0" Naziv="Izgradnja zoloskog vrta" Nositelj="Grad Virovitica" Vrijednost="1000000" Status="Aktivan" Voditelj="3">
+      <aktivnosti>
+        <aktivnost id_aktivnosti="0" Naziv="Gradnja zoloskog vrta" Opis="Zoloski u Virovitici" Vrijeme="24 mjeseca" id_lokacije="0">
+          <ListaClanova>
+            <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="false" />
+            <clan id_clana="3" ime="Filip" prezime="Peric" oib="47865338621" voditelj="true" />
+          </ListaClanova>
+        </aktivnost>
+      </aktivnosti>
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="5" ime="Dario" prezime="Rupcic" oib="87098765241" voditelj="True" />
+      </ListaClanova>
+    </projekt>
+    <projekt ID="1" id_lokacije="1" Naziv="Gradnja Studentskog doma" Nositelj="" Vrijednost="10000000" Status="Aktivan" Voditelj="1">
+      <aktivnosti>
+        <aktivnost id_aktivnosti="1" Naziv="Kopanje" Opis="Kopanje u Virovitici" Vrijeme="3 mjeseca" id_lokacije="1">
+          <ListaClanova>
+            <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+            <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+          </ListaClanova>
+        </aktivnost>
+      </aktivnosti>
+      <ListaClanova>
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+        <clan id_clana="3" ime="Filip" prezime="Peric" oib="47865338621" voditelj="true" />
+        <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="false" />
+      </ListaClanova>
+    </projekt>
+    <projekt ID="2" id_lokacije="2" Naziv="Rusenje kuce u Varazdinu" Nositelj="Obitelj Rupcic" Vrijednost="200000" Status="Aktivan" Voditelj="1">
+      <aktivnosti>
+        <aktivnost id_aktivnosti="2" Naziv="Rusenje" Opis="Rusenje u Varazdinu" Vrijeme="4 mjeseca" id_lokacije="2">
+          <ListaClanova>
+            <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+            <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+          </ListaClanova>
+        </aktivnost>
+      </aktivnosti>
+      <ListaClanova>
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+        <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="false" />
+      </ListaClanova>
+    </projekt>
+    <projekt ID="3" id_lokacije="3" Naziv="Gradnja autobusnog kolodvora u Slavonskom brodu" Nositelj="Grad Slavonski Brod" Vrijednost="2000000" Status="Aktivan" Voditelj="1">
+      <aktivnosti>
+        <aktivnost id_aktivnosti="3" Naziv="Dodavanje fasade" Opis="Dodavanje fasade u Slavonskom brodu na kolodvor" Vrijeme="6 mjeseci" id_lokacije="3">
+          <ListaClanova>
+            <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+            <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+          </ListaClanova>
+        </aktivnost>
+      </aktivnosti>
+      <ListaClanova>
+        <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+      </ListaClanova>
+    </projekt>
+    <projekt ID="4" id_lokacije="4" Naziv="Zimska skola" Nositelj="Skola Tovarnik" Vrijednost="20000" Status="Aktivan" Voditelj="1">
+      <aktivnosti>
+        <aktivnost id_aktivnosti="4" Naziv="Zimska skola" Opis="Zimska skola programiranja u Tovarniku" Vrijeme="3 mjeseca" id_lokacije="4">
+          <ListaClanova>
+            <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+            <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+            <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+          </ListaClanova>
+        </aktivnost>
+      </aktivnosti>
+      <ListaClanova>
+        <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+      </ListaClanova>
+    </projekt>
+    <projekt ID="5" id_lokacije="5" Naziv="Piromidom za Vinkovce" Nositelj="Grad Vinkovci" Vrijednost="20000000" Status="Aktivan" Voditelj="1">
+      <aktivnosti>
+        <aktivnost id_aktivnosti="5" Naziv="Gradnja piramide" Opis="Granja piramide u Vinkovcima" Vrijeme="42 mjeseca" id_lokacije="5">
+          <ListaClanova>
+            <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+            <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+            <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+          </ListaClanova>
+        </aktivnost>
+      </aktivnosti>
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+      </ListaClanova>
+    </projekt>
+  </projekti>
+  <ListaAktivnosti>
+    <aktivnost id_aktivnosti="0" Naziv="Gradnja zoloskog vrta" Opis="Zoloski u Virovitici" Vrijeme="24 mjeseca" id_lokacije="0">
+      <ListaClanova>
+        <clan id_clana="4" ime="David" prezime="Ivic" oib="32865438650" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+      </ListaClanova>
+    </aktivnost>
+    <aktivnost id_aktivnosti="1" Naziv="Kopanje" Opis="Kopanje u Virovitici" Vrijeme="3 mjeseca" id_lokacije="1">
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+      </ListaClanova>
+    </aktivnost>
+    <aktivnost id_aktivnosti="2" Naziv="Rusenje" Opis="Rusenje u Varazdinu" Vrijeme="4 mjeseca" id_lokacije="2">
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+      </ListaClanova>
+    </aktivnost>
+    <aktivnost id_aktivnosti="3" Naziv="Dodavanje fasade" Opis="Dodavanje fasade u Slavonskom brodu" Vrijeme="6 mjeseci" id_lokacije="3">
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+      </ListaClanova>
+    </aktivnost>
+    <aktivnost id_aktivnosti="4" Naziv="Zimska skola" Opis="Zimska skola programiranja u Tovarniku" Vrijeme="3 mjeseca" id_lokacije="4">
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+      </ListaClanova>
+    </aktivnost>
+    <aktivnost id_aktivnosti="5" Naziv="Gradnja piramide" Opis="Granja piramide u Vinkovcima" Vrijeme="42 mjeseca" id_lokacije="5">
+      <ListaClanova>
+        <clan id_clana="0" ime="Ivan" prezime="Horvat" oib="32865438621" voditelj="false" />
+        <clan id_clana="1" ime="Marko" prezime="Ivanic" oib="62862436647" voditelj="true" />
+        <clan id_clana="2" ime="Petar" prezime="Filipic" oib="36865438616" voditelj="false" />
+      </ListaClanova>
+    </aktivnost>
+  </ListaAktivnosti>
+  <lokacije>
+    <lokacija id_lokacije="0" adresa="Ulica Matije Gupca 23" postanskibroj="33000" grad="Virovitica" latituda="45.83194" longituda="17.38389" />
+    <lokacija id_lokacije="1" adresa="Osjecka ul. 6" postanskibroj="33000" grad="Virovitica" latituda="45.83947095563706" longituda="17.49425" />
+    <lokacija id_lokacije="2" adresa="Setaliste Josipa Jurja Strossmayera 1" postanskibroj="42000" grad="Varazdin" latituda="46.3109" longituda="16.3369" />
+    <lokacija id_lokacije="3" adresa="Josipa Rimca 7" postanskibroj="35000" grad="Slavonski Brod" latituda="45.16032412441" longituda="18.0003" />
+    <lokacija id_lokacije="4" adresa="Ul. Antuna Gustava Matosa 7" postanskibroj="32249" grad="Tovarnik" latituda="45.1659" longituda="19.1522" />
+    <lokacija id_lokacije="5" adresa="Trg bana Josipa Sokcevica 16" postanskibroj="32100" grad="Vinkovci" latituda="45.2884172368565" longituda="18.805220333864174" />
+    <lokacija id_lokacije="10" adresa="Ulia" postanskibroj="49245" grad="Grad" latituda="45.23" longituda="32.42" />
+    <lokacija id_lokacije="154" adresa="Ulica 32" postanskibroj="49243" grad="Virovitica" latituda="43.233" longituda="32.323" />
+    <lokacija id_lokacije="193" adresa="Ulica Matije Gupca 32" postanskibroj="330000" grad="Virovitica" latituda="45.32" longituda="47.32" />
+  </lokacije>
+</vuv>

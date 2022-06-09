@@ -44,7 +44,7 @@ namespace VUV_Projekti
             {
                 case 0:
 
-                    VUV.OcitajPodatkeClanova();
+                    VUV.IspisiProjekt();
 
                     break;
                 case 1:

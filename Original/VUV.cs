@@ -5,16 +5,27 @@ using System.Threading;
 using System.IO;
 using System.Xml;
 using ConsoleTables;
-
+using System.Xml.Serialization;
 
 namespace VUV_Projekti
 {
+    [XmlRootAttribute("VUV", IsNullable = false)]
     class VUV
     {
+        [XmlArrayAttribute("Projekti")]
+        public List<Projekt> projekts = new List<Projekt>();
+        [XmlArrayAttribute("ClanoviProjekta")]
+        public List<ClanProjekta> clanProjektas = new List<ClanProjekta>();
 
+
+        public static void SeedData()
+        {
+            
+
+        }
         public static string DodajXML()
         {
-            StreamReader sr = new StreamReader(@"C:\Users\Korisnik\Desktop\KV\VUV_Projekti2\VUV.xml");
+            StreamReader sr = new StreamReader(@"VUV.xml");
             string xml = "";
             using (sr)
             {
@@ -23,7 +34,7 @@ namespace VUV_Projekti
             return xml;
         }
 
-        public static void OcitajPodatkeClanova()
+        public static void IspisiProjekt()
         {
             Console.WriteLine();
             string xml = DodajXML();
@@ -41,7 +52,7 @@ namespace VUV_Projekti
             ConsoleTable tablicaProjekata = new ConsoleTable("ID", "Naziv", "Nositelj", "Vrijednost", "Status", "Lokacija");
             
 
-                foreach (Lokacija l in listalokacija)
+                foreach (Projekt p in projekti)
                 {
 
                    
@@ -140,11 +151,7 @@ namespace VUV_Projekti
             xmlObject.LoadXml(xml);
             XmlNodeList mainNode = xmlObject.SelectNodes("//vuv/projekti/projekt");
             List<Projekt> praznalistaProjekata = new List<Projekt>();
-            foreach(XmlNode node in mainNode)
-            {
-                praznalistaProjekata.Add(new Projekt(node.Attributes["ID"].Value, node.Attributes["id_lokacije"].Value,
-                    new List<ClanProjekta>(praznalistaProjekata),node.a));
-            }
+            
             return praznalistaProjekata;
         }
 
@@ -231,14 +238,7 @@ namespace VUV_Projekti
 
             foreach (XmlNode node in mainNode)
             {
-                foreach(XmlNode cp in node.ChildNodes[0])
-                {
-                    praznalistaclanovaprojekta.Add(new ClanProjekta(node.Attributes["id_clana"].Value, node.Attributes["ime"].Value, node.Attributes["prezime"].Value, node.Attributes["oib"].Value,
-                Convert.ToBoolean(node.Attributes["voditelj"].Value)));
-                }
-                praznalistaclanovaprojekta.Add(new )
-             
-                
+                  
             }
             return praznalistaclanovaprojekta;
         }
@@ -612,7 +612,7 @@ namespace VUV_Projekti
                     }
                     Console.WriteLine("Uspjesno kreiran Voditelj");
                     mainNode.AppendChild(xmlNode);
-                    xmlObject.Save(@"C:\Users\Korisnik\Desktop\KV\VUV_Projekti2\VUV.xml");
+                    xmlObject.Save(@"VUV.xml");
                     ListaVoditelja.Add(cp2);
                     
                     return ListaVoditelja;
