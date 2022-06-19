@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\development\\VUV\\VUV_Projekti.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj": {}
   },
   "projects": {
-    "C:\\development\\VUV\\VUV_Projekti.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\development\\VUV\\VUV_Projekti.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj",
         "projectName": "VUV_Projekti",
-        "projectPath": "C:\\development\\VUV\\VUV_Projekti.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\development\\VUV\\obj\\",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj",
+        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +47,10 @@
             "BetterConsoleTables": {
               "target": "Package",
               "version": "[1.1.3, )"
+            },
+            "Colorful.Console": {
+              "target": "Package",
+              "version": "[1.2.15, )"
             },
             "ConsoleTables": {
               "target": "Package",

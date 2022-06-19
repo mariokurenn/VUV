@@ -37,57 +37,47 @@ namespace VUV_Projekti
         public static void Administracija()
         {
             string prompt = "Odaberite neke od stvari sa menija";
-            string[] opcije = { "1. Ispisi listu projekata", "2. Dodavanje projekata", "3. Azuriranje projekata", "4. Lista aktivnosti", "5. Dodavanje aktivnosti", "6. Lista clanova projekta", "7. Dodavnaje clana", "8. Brisanje clana", "9. Dodavanje lokacije", "10. Dodavanje voditelja", "11. Dodaj clana aktivnosti" };
+            string[] opcije = { "1. Ispisi listu projekata", "2. Kreiranje projekta", "3. Azuriranje projekata", "4. Lista aktivnosti", "4.1. Ispis aktivnosti iz projekta",
+                "5. Dodavanje aktivnosti", "6. Lista clanova projekta", "7. Dodavnaje clana", "8. Brisanje clana","10. Resetiraj podatke"};
             Izbornik izlaz = new Izbornik(prompt, opcije);
             int OdabraniIndex = izlaz.Pokreni();
             switch (OdabraniIndex)
             {
                 case 0:
-
-                    VUV.IspisiProjekt();
-
+                    VUV.IspisListeProjekata();
                     break;
                 case 1:
-
-                    VUV.NoviProjekt();
-
+                    VUV.KreirajProjekt();
                     break;
                 case 2:
-
-
+                    VUV.AzurirajProjekt2();
                     break;
                 case 3:
-                    VUV.listaAktivnosti();
+                    VUV.IspisSvihAktivnosti();
                     break;
-
                 case 4:
-
+                    VUV.IspisAktivnostiProjekta();
                     break;
 
                 case 5:
+                    VUV.DodajAktivnost();
                     break;
                 case 6:
-                    VUV.DodajClana(VUV.listaClanova());
+                    VUV.ListaClanova2();
                     break;
                 case 7:
-
+                    VUV.DodavanjeClana2();
+                   
                     break;
 
                 case 8:
-
-                    VUV.DodajLokaciju(VUV.listaLokacija());
-
+                    VUV.BrisanjeClana();
                     break;
+    
                 case 9:
-
-                    VUV.DodajVoditelja(VUV.ListaVoditelja());
-                    break;
-                case 10:
-
-                    VUV.ListaVoditelja();
+                    VUV.ResetirajPodatke();
                     break;
             }
-
             Console.ReadKey(true);
             Environment.Exit(0);
         }
@@ -98,7 +88,6 @@ namespace VUV_Projekti
             PokreniIzbornik();
 
         }
-
         public static void Exit()
         {
             string prompt = "";
@@ -108,11 +97,8 @@ namespace VUV_Projekti
             switch (OdabraniIndex)
             {
                 case 0:
-
                     Administracija();
-
                     break;
-
             }
         }
         public static void PokreniIzbornik()
@@ -126,6 +112,7 @@ namespace VUV_Projekti
             {
                 case 0:
                     Pokreni();
+             
                     break;
                 case 1:
 
@@ -140,63 +127,63 @@ namespace VUV_Projekti
             {
                 Console.Title = "VUV Projekti";
                 Console.SetCursorPosition(0, 0);
-                for (int i = 0; i < 5; i++)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(@"
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine(@"
 
 
 
 
-                                                    ╔════╤╤╤╤════╗    
-                                                    ║    │││ \   ║    
-                                                    ║    │││  O  ║    
-                                                    ║    OOO     ║
+            //                                        ╔════╤╤╤╤════╗    
+            //                                        ║    │││ \   ║    
+            //                                        ║    │││  O  ║    
+            //                                        ║    OOO     ║
 
-                                                  Ucitavnaje programa...");
-                    Thread.Sleep(100);
-                    Console.Clear();
-                    Console.WriteLine(@"
-
-
-
-
-                                                    ╔════╤╤╤╤════╗    
-                                                    ║    ││││    ║    
-                                                    ║    ││││    ║ 
-                                                    ║    OOOO    ║
-
-                                                  Ucitavnaje programa...");
-                    Thread.Sleep(100);
-                    Console.Clear();
-                    Console.WriteLine(@"
+            //                                      Ucitavnaje programa...");
+            //    Thread.Sleep(100);
+            //    Console.Clear();
+            //    Console.WriteLine(@"
 
 
 
 
-                                                    ╔════╤╤╤╤════╗    
-                                                    ║   / │││    ║    
-                                                    ║  O  │││    ║  
-                                                    ║     OOO    ║
+            //                                        ╔════╤╤╤╤════╗    
+            //                                        ║    ││││    ║    
+            //                                        ║    ││││    ║ 
+            //                                        ║    OOOO    ║
 
-                                                  Ucitavnaje programa...");
-                    Thread.Sleep(100);
-                    Console.Clear();
-                    Console.WriteLine(@"
-
-
+            //                                      Ucitavnaje programa...");
+            //    Thread.Sleep(100);
+            //    Console.Clear();
+            //    Console.WriteLine(@"
 
 
-                                                    ╔════╤╤╤╤════╗
-                                                    ║    ││││    ║ 
-                                                    ║    ││││    ║
-                                                    ║    OOOO    ║
+
+
+            //                                        ╔════╤╤╤╤════╗    
+            //                                        ║   / │││    ║    
+            //                                        ║  O  │││    ║  
+            //                                        ║     OOO    ║
+
+            //                                      Ucitavnaje programa...");
+            //    Thread.Sleep(100);
+            //    Console.Clear();
+            //    Console.WriteLine(@"
+
+
+
+
+            //                                        ╔════╤╤╤╤════╗
+            //                                        ║    ││││    ║ 
+            //                                        ║    ││││    ║
+            //                                        ║    OOOO    ║
                 
-                                                  Ucitavnaje programa...");
-                    Thread.Sleep(100);
-                    Console.Clear();
-                    Console.ResetColor();
-                }
+            //                                      Ucitavnaje programa...");
+            //    Thread.Sleep(100);
+            //    Console.Clear();
+            //    Console.ResetColor();
+            //}
                 PokreniIzbornik();
             }
         }
