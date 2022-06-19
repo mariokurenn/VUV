@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VUV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Projekti>
-    <Projekt ID="1" Naziv="Studentski startup inkubator" Nositelj="Veleučilište u Virovitici – Odjel za ekonomiju" Vrijednost="1000000 kuna" Status="Neaktivan" RedniBroj="1">
+    <Projekt ID="1" Naziv="Studentski startup inkubator" Nositelj="Veleučilište u Virovitici – Odjel za ekonomiju" Vrijednost="1000000 kuna" Status="Aktivan" RedniBroj="1">
       <ClanProjekta>
         <ClanProjekta ID="5" Ime="Bozidar" Prezime="Bozidarevic" OIB="50736098472" Voditelj="true" Deleted="false" />
       </ClanProjekta>
@@ -98,18 +98,12 @@
             <ClanProjekta ID="3" Ime="Helena" Prezime="Ivic" OIB="54684809551" Voditelj="true" Deleted="false" />
           </ClanoviProjekta>
         </Aktivnost>
-        <Aktivnost Id="152" Naziv="test" Opis="test" Vrijeme="23.12.1001 - 23.12.2002">
-          <ClanoviProjekta />
-        </Aktivnost>
-        <Aktivnost Id="200" Naziv="test" Opis="test" Vrijeme="20.10.1920 - 20.12.2002">
-          <ClanoviProjekta />
-        </Aktivnost>
       </Aktivnosti>
       <Lokacija Id="5" Adresa="Ul. Ive Lole Ribara " Postanskibroj="53250" Grad="Donji Lapac" Latituda="17.38902768907842" Longituda="45.8418487638295" />
     </Projekt>
   </Projekti>
   <ClanoviProjekta>
-    <ClanProjekta ID="1" Ime="Mario" Prezime="Ivakovic" OIB="28993030571" Voditelj="true" Deleted="true" />
+    <ClanProjekta ID="1" Ime="Mario" Prezime="Ivakovic" OIB="28993030571" Voditelj="true" Deleted="false" />
     <ClanProjekta ID="2" Ime="Ivan" Prezime="Peric" OIB="85739312800" Voditelj="true" Deleted="false" />
     <ClanProjekta ID="3" Ime="Helena" Prezime="Ivic" OIB="54684809551" Voditelj="true" Deleted="false" />
     <ClanProjekta ID="4" Ime="Vedran" Prezime="Jerkovic" OIB="92029545561" Voditelj="true" Deleted="false" />
@@ -120,11 +114,7 @@
     <ClanProjekta ID="10" Ime="Vito" Prezime="Rukavina" OIB="90144583083" Voditelj="false" Deleted="false" />
   </ClanoviProjekta>
   <Lokacije>
-    <Lokacija Id="1" Adresa="Ulica Matije Gupca 23" Postanskibroj="33000" Grad="Virovitica" Latituda="17.38768898218219" Longituda="45.84193993175785" />
-    <Lokacija Id="2" Adresa="Ulica Matije Gupca 23" Postanskibroj="33000" Grad="Virovitica" Latituda="17.38768898218219" Longituda="45.84193993175785" />
-    <Lokacija Id="3" Adresa="Gradišćanska ul. 24, 10000, Zagreb" Postanskibroj="10000" Grad="Zagreb" Latituda=" 15.941404447629267" Longituda="45.810331562989" />
-    <Lokacija Id="4" Adresa="Ul. Matije Gupca 78/4 " Postanskibroj="33000" Grad="Virovitica" Latituda="17.38902768907842" Longituda="45.8418487638295" />
-    <Lokacija Id="5" Adresa="Ul. Ive Lole Ribara " Postanskibroj="53250" Grad="Donji Lapac" Latituda="17.38902768907842" Longituda="45.8418487638295" />
+    
   </Lokacije>
   <ListaVoditelja>
     <ClanProjekta ID="1" Ime="Mario" Prezime="Ivakovic" OIB="28993030571" Voditelj="true" Deleted="false" />

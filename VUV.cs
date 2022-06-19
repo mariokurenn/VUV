@@ -198,6 +198,7 @@ namespace VUV_Projekti
             x.Serialize(writer, vuv);
             writer.Dispose();
         }
+
         // Funkcija koja iz XMLa kreira objekte
         public static VUV Deserilizacija()
         {
@@ -224,15 +225,21 @@ namespace VUV_Projekti
         public static VUV IspisLokacija()
         {
             var des = Deserilizacija();
-            Table tablica = new Table("ID", "Grad", "Latituda", "Longituda", "Postanski Broj");
+            Table tablica = new Table("ID Lokacije", "Grad", "Latituda", "Longituda", "Postanski Broj");
             tablica.Config = TableConfiguration.MySql();
-            foreach (Lokacija l in des.Lokacije)
+            if(des.Lokacije.Count > 0)
             {
-                tablica.AddRow(l.Id, l.Grad, l.Latituda, l.Longituda, l.Postanskibroj);
-
+                foreach (Lokacija l in des.Lokacije)
+                {
+                    tablica.AddRow(l.Id, l.Grad, l.Latituda, l.Longituda, l.Postanskibroj);
+                }
+                Console.Write(tablica.ToString());
             }
-            Console.Write(tablica.ToString());
-
+            else
+            {
+                Console.WriteLine("Ne postoji ni jedna lokacija");
+            }
+            Meni();
             return des;
         }
         // Funkcija za dohvacanje Voditelja i daljnje baratanje njima
@@ -304,6 +311,232 @@ namespace VUV_Projekti
             VUV.Serijalizacija(des);
             Meni();
             return des;
+        }
+        // Funckija za kreiranje Lokacije
+        public static void KreirajLokaciju()
+        {
+            try
+            {
+                var des = Deserilizacija();
+                Console.WriteLine("Dodajte Lokaciju:");
+                Console.WriteLine("");
+                string id;
+                string znakovi = @"\|!#$%&/()=?»«@£§€{}-;'<>_,";
+                string slova = @"ABCĆČŽDĐEFGHIJKLMNOPRQRSTUVWXYZabcćčđždefghijklmnoprqđrstuvwxyz";
+                string brojevi = @"0123456789";
+                Lokacija l = new Lokacija();
+                do
+                {
+
+                    try
+                    {
+                        Console.WriteLine("Upišite ID Lokacije: ");
+                        id = Console.ReadLine();
+                        if (id.Length == 0)
+                        {
+                            throw new Exception("ID je prazan");
+                        }
+
+                        foreach (char slovo in znakovi)
+                        {
+                            if (id.Contains(slovo))
+                            {
+                                throw new Exception("ID ne moze sadrzavati specijalna slova");
+
+                            }
+                        }
+                        foreach (char slovo in slova)
+                        {
+                            if (id.Contains(slovo))
+                            {
+                                throw new Exception("ID ne smije sadrzavati slovo");
+                            }
+                        }
+                        foreach (Lokacija li in des.Lokacije)
+                        {
+
+                            if (li.Id == id)
+                            {
+                                throw new Exception("Lokacija s tim ID-em već postoji");
+                            }
+
+                        }
+                        l.Id = id;
+                        break;
+                    }
+                    catch (Exception e)
+                    {
+
+                        Console.WriteLine(e.Message);
+                    }
+
+                }
+                while (true);
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Unesite Adresu: ");
+                        string adresa = Console.ReadLine();
+                        if (adresa.Length == 0)
+                        {
+                            throw new Exception("Adresa je prazna, pokušajte ponovo");
+                        }
+                        l.Adresa = adresa;
+                        break;
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                } while (true);
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Unesite poštanski broj: ");
+                        string postanskibroj = Console.ReadLine();
+                        foreach (char slovo in znakovi)
+                        {
+                            if (postanskibroj.Contains(slovo))
+                            {
+                                throw new Exception("Poštanski broj ne moze sadrzavati specijalna slova");
+
+                            }
+                        }
+                        foreach (char slovo in slova)
+                        {
+                            if (postanskibroj.Contains(slovo))
+                            {
+                                throw new Exception("Poštanski broj ne smije sadrzavati slovo");
+                            }
+                        }
+                        if (postanskibroj.Length != 5)
+                        {
+                            throw new Exception("Poštanski broj nije ispravan, pokušajte ponovo");
+                        }
+
+                        l.Postanskibroj = postanskibroj;
+                        break;
+                    }
+                    catch (Exception postanskibroj)
+                    {
+                        Console.WriteLine(postanskibroj.Message);
+                    }
+                } while (true);
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Unesite ime grada");
+                        string grad = Console.ReadLine();
+                        if (grad.Length == 0)
+                        {
+                            throw new Exception("Ime grada je prazno");
+                        }
+                        foreach (char broj in brojevi)
+                        {
+                            if (grad.Contains(brojevi))
+                            {
+                                throw new Exception("Ime grada ne smije sadrzavati brojeve");
+                            }
+                        }
+                        l.Grad = grad;
+                        break;
+                    }
+                    catch (Exception egrad)
+                    {
+                        Console.WriteLine(egrad.Message);
+                    }
+                } while (true);
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Unesite latitudu grada");
+                        string latituda = Console.ReadLine();
+                        if (latituda.Length == 0)
+                        {
+                            throw new Exception("Latituda grada je prazna");
+                        }
+                        foreach (char slovo in slova)
+                        {
+                            if (latituda.Contains(slovo))
+                            {
+                                throw new Exception("Latituda ne smije sadrzavati slovo");
+                            }
+                        }
+                        foreach (char slovo in znakovi)
+                        {
+                            if (latituda.Contains(slovo))
+                            {
+                                throw new Exception("Latituda ne moze sadrzavati specijalna slova");
+                            }
+                        }
+                        l.Latituda = latituda;
+                        break;
+                    }
+                    catch (Exception lat)
+                    {
+
+                        Console.WriteLine(lat.Message); 
+                    }
+                } while (true);
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Unesite longitudu grada");
+                        string longituda = Console.ReadLine();
+                        if (longituda.Length == 0)
+                        {
+                            throw new Exception("Longituda grada je prazna");
+                        }
+                        foreach (char slovo in slova)
+                        {
+                            if (longituda.Contains(slovo))
+                            {
+                                throw new Exception("Longituda ne smije sadrzavati slovo");
+                            }
+                        }
+                        foreach (char slovo in znakovi)
+                        {
+                            if (longituda.Contains(slovo))
+                            {
+                                throw new Exception("Longituda ne moze sadrzavati specijalna slova");
+                            }
+                        }
+                        l.Longituda = longituda;
+                        break;
+                    }
+                    catch (Exception lat)
+                    {
+
+                        Console.WriteLine(lat.Message);
+                    }
+                } while (true);
+            
+                try
+                {
+                   
+                    Console.WriteLine("Lokacija je uspjesno dodana.",Color.Green);
+ 
+                    des.Lokacije.Add(l);
+                    VUV.Serijalizacija(des);
+                    Meni();
+                }
+                catch (Exception uspijeh)
+                {
+
+                    Console.WriteLine(uspijeh);
+                }
+
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.Message);
+            }
         }
 
         // Funkcija za kreiranje Projekta 
