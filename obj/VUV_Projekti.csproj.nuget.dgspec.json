@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\KV\\VUV_Projekti2\\VUV\\VUV_Projekti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\KV\\VUV_Projekti2\\VUV\\VUV_Projekti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV_Projekti2\\VUV\\VUV_Projekti.csproj",
         "projectName": "VUV_Projekti",
-        "projectPath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV_Projekti2\\VUV\\VUV_Projekti.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV_Projekti2\\VUV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

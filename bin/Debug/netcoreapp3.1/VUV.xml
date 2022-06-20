@@ -86,6 +86,7 @@
         <ClanProjekta ID="10" Ime="Vito" Prezime="Rukavina" OIB="90144583083" Voditelj="false" Deleted="false" />
         <ClanProjekta ID="4" Ime="Vedran" Prezime="Jerkovic" OIB="92029545561" Voditelj="true" Deleted="false" />
         <ClanProjekta ID="8" Ime="Zdravko" Prezime="Babic" OIB="86809339209" Voditelj="false" Deleted="false" />
+        <ClanProjekta ID="11" Ime="test" Prezime="test" OIB="20141111111" Voditelj="false" Deleted="false" />
       </ClanProjekta>
       <ListaVoditelja>
         <ClanProjekta ID="2" Ime="Ivan" Prezime="Peric" OIB="85739312800" Voditelj="true" Deleted="false" />
@@ -112,9 +113,14 @@
     <ClanProjekta ID="8" Ime="Zdravko" Prezime="Babic" OIB="86809339209" Voditelj="false" Deleted="false" />
     <ClanProjekta ID="9" Ime="Hamzo" Prezime="Cuturic" OIB="68689538295" Voditelj="false" Deleted="false" />
     <ClanProjekta ID="10" Ime="Vito" Prezime="Rukavina" OIB="90144583083" Voditelj="false" Deleted="false" />
+    <ClanProjekta ID="11" Ime="test" Prezime="test" OIB="20141111111" Voditelj="false" Deleted="false" />
   </ClanoviProjekta>
   <Lokacije>
-    
+    <Lokacija Id="1" Adresa="Ulica Matije Gupca 23" Postanskibroj="33000" Grad="Virovitica" Latituda="17.38768898218219" Longituda="45.84193993175785" />
+    <Lokacija Id="2" Adresa="Ulica Matije Gupca 23" Postanskibroj="33000" Grad="Virovitica" Latituda="17.38768898218219" Longituda="45.84193993175785" />
+    <Lokacija Id="3" Adresa="Gradišćanska ul. 24, 10000, Zagreb" Postanskibroj="10000" Grad="Zagreb" Latituda=" 15.941404447629267" Longituda="45.810331562989" />
+    <Lokacija Id="4" Adresa="Ul. Matije Gupca 78/4 " Postanskibroj="33000" Grad="Virovitica" Latituda="17.38902768907842" Longituda="45.8418487638295" />
+    <Lokacija Id="5" Adresa="Ul. Ive Lole Ribara " Postanskibroj="53250" Grad="Donji Lapac" Latituda="17.38902768907842" Longituda="45.8418487638295" />
   </Lokacije>
   <ListaVoditelja>
     <ClanProjekta ID="1" Ime="Mario" Prezime="Ivakovic" OIB="28993030571" Voditelj="true" Deleted="false" />

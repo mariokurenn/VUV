@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B7DR/mQgcdNyxlrTxjkniIGPSq61sbmaM9vJQkOoX6gjuJJ4o+OW9riU0d4XfqnU0xrkWKKZTxTvw0TVdoJhYw==",
+  "dgSpecHash": "amGcrp7r9AprfS7s0tqWmH4qSpaRLLxSj8ISkq66Jn190H2vmUS94c0nnolrtGDAzyP/Y+QlW49WmF1ICQ3ztA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV-main\\VUV_Projekti.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\KV\\VUV_Projekti2\\VUV\\VUV_Projekti.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\colorful.console\\1.2.15\\colorful.console.1.2.15.nupkg.sha512",
